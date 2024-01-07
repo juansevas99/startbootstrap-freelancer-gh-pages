@@ -23,6 +23,18 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
+
+
+    var emailTo =  function(){
+        alert("Hollaa")
+        const recipient = 'hit_io_2024@outlook.com';
+        const subject = 'Hello';
+        const body = 'This is the body of the email.';
+    
+        const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+        window.location.href = mailtoLink;
+    }
     // Shrink the navbar 
     navbarShrink();
 
@@ -52,3 +64,6 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+
